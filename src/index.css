@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+.body {
+ 
+  background-color: #111;
+  color: #fff;
+}
+
+/* Hide the scrollbar but allow scrolling */
+#tasklist::-webkit-scrollbar {
+  display: none;
+}
+
+#tasklist {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
