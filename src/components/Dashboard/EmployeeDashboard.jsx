@@ -4,13 +4,14 @@ import TaskListNumber from '../other/TaskListNumber';
 import TaskList from '../TaskList/TaskList';
 
 const EmployeeDashboard = (props) => {
-  const { employeeData, user, changeUser } = props; // Destructure all props here
+  const { employeeData, user, changeUser,emply } = props; // Destructure all props here
+  console.log(employeeData);  
   
   return (
     <div className='p-10 bg-[#1C1C1C] h-screen'>
       <Header data={employeeData} user={user} changeUser={props.changeUser} />
       <TaskListNumber data={employeeData} />
-      <TaskList data={employeeData} />
+      <TaskList data={employeeData}/>
     </div>
   );
 };

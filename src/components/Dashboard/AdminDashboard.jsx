@@ -5,7 +5,7 @@ import OldTask from '../other/OldTask'
 // import { useTheme } from '../../context/ThemeContext'
 const AdminDashboard = (props) => {
     return (
-        <div className=' bg-black w-full h-screen p-7'>
+        <div className=' bg-black w-full h-screen dark:text-white p-7'>
 
  
             <Header changeUser={props.changeUser} />

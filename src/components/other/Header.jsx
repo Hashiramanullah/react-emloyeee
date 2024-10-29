@@ -18,23 +18,24 @@ const Header = ({ data, user, changeUser }) => { // Destructuring changeUser her
   };
 
   return (
-    <div>
+    <div className='mx-auto'>
       <div className={`flex items-end justify-between ${theme === 'light' ? 'bg-slate-200 text-black' : 'body'}`}>
-        <h1 className={`text-2xl font-medium ${theme === 'light' ? 'bg-slate-200 text-black' : 'body'}`}>
+
+        <h1 className={`md:text-2xl text-base font-medium ${theme === 'light' ? 'bg-slate-200 text-black' : 'body'}`}>
           Hello <br />  
-          <span className={`text-3xl font-semibold ${theme === 'light' ? 'bg-slate-200 text-black' : 'body'}`}>
+          <span className={`md:text-3xl text-base  font-semibold ${theme === 'light' ? 'bg-slate-200 text-black' : 'body'}`}>
             {userName} 👋
           </span>
         </h1>
-        <div>
+        <div className='flex'>
           <button 
             onClick={logoutHandler} 
-            className={`px-5 py-3 rounded-sm text-lg font-medium m-2 ${theme === 'light' ? 'bg-[#38393b] text-white' : 'bg-red-500 text-white'}`}>
+            className={`px-3 py-2 rounded-sm text-base md:text-2xl font-medium hover:bg-red-600 m-2 ${theme === 'light' ? 'bg-[#38393b] text-white' : 'bg-red-500 text-white'}`}>
             Log Out
           </button>
           <button 
             onClick={toggleTheme}
-            className={`px-5 py-3 rounded-sm text-lg font-medium m-2 ${theme === 'light' ? 'bg-[#38393b] text-white' : 'bg-red-500 text-white'}`}>
+            className={`px-3 py-2 rounded-sm text-lg font-medium hover:bg-red-600 focus:outline-none focus:ring  xl:bg-black   m-2 ${theme === 'light' ? 'bg-[#38393b] text-white' : 'bg-red-500 text-white'}`}>
             {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
           </button>
         </div>
